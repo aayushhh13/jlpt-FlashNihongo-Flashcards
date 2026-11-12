@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3f1ff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12122a" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="FlashNihongo">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%B4%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>FlashNihongo – JLPT N5 and N4 vocabulary and kanji flashcards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="intro-open">
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<section class="intro" id="intro" role="dialog" aria-modal="true" aria-label="Welcome to FlashNihongo">
+  <div class="intro-petals" id="introPetals" aria-hidden="true"></div>
+  <div class="intro-inner">
+    <div class="intro-main">
+      <div class="fan" aria-hidden="true">
+        <div class="fc fc-l"></div>
+        <div class="fc fc-r"></div>
+        <div class="fc fc-main">
+          <div class="fc-in">
+            <div class="fc-face fc-f jp"><span class="stamp jp">N5</span>こんにちは</div>
+            <div class="fc-face fc-b">Hello<small>konnichiwa</small></div>
+          </div>
+        </div>
+      </div>
+      <h1 class="intro-title jp">FlashNihongo</h1>
+      <svg class="brush" viewBox="0 0 150 12" aria-hidden="true"><path d="M4 7 C 40 2, 90 11, 146 4"/></svg>
+      <p class="intro-desc">JLPT N5 &amp; N4 vocabulary and kanji flashcards. Flip, learn, repeat.</p>
+      <div class="facts">
+        <span class="fact"><b class="jp">N5</b><span id="introN5">802</span> words</span>
+        <span class="fact n4"><b class="jp">N4</b><span id="introN4">628</span> words</span>
+        <span class="fact k"><b class="jp">字</b><span id="introK">282</span> kanji</span>
+      </div>
+      <p class="phrase"><strong class="jp">がんばろう！</strong><span>Let's do our best</span></p>
+      <button class="start" id="startBtn">
+        Tap to start
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <div class="modes" id="modes" hidden>
+        <p class="modes-title">What do you want to practice?</p>
+        <button class="mode m-vocab" data-mode="vocab">
+          <span class="mi jp" aria-hidden="true">言</span>
+          <span class="mt"><b>Vocab practice</b><small><span id="modeV">0</span> words · N5 and N4</small></span>
+          <svg class="go" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <button class="mode m-kanji" data-mode="kanji">
+          <span class="mi jp" aria-hidden="true">字</span>
+          <span class="mt"><b>Kanji practice</b><small><span id="modeK">0</span> kanji · meaning, readings, words</small></span>
+          <svg class="go" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+    <footer class="credit">
+      <p>Made by <b>Aayush Sensei</b></p>
+      <div class="credit-links">
+        <a href="https://www.linkedin.com/in/aayush-sharma-b0595426b" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.25H3V9.75zM10 9.75h3.83v1.54h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.66 4.8 6.12V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.32-1.96 2.69V21h-4V9.75z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:aayushhsharma13@gmail.com">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+          aayushhsharma13@gmail.com
+        </a>
+      </div>
+    </footer>
+  </div>
+</section>
+
+<main class="app" id="app" inert>
+  <header>
+    <div class="brand">
+      <div class="logo jp" aria-hidden="true">言</div>
+      <div>
+        <div class="app-title jp">FlashNihongo</div>
+        <p class="sub">JLPT N5 and N4 vocabulary</p>
+      </div>
+    </div>
+    <div class="hbtns">
+    <button class="opt-btn" id="menuBtn" aria-label="Back to the mode menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>
+      <span>Menu</span>
+    </button>
+    <button class="opt-btn" id="optBtn" aria-label="Options" aria-expanded="false" aria-controls="optPanel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>Options</span>
+    </button>
+    </div>
+  </header>
+
+  <nav class="decks" role="tablist" aria-label="Choose a deck" id="decks">
+    <button class="deck" role="tab" data-deck="all">All <small id="cAll"></small></button>
+    <button class="deck" role="tab" data-deck="5">N5 <small id="c5"></small></button>
+    <button class="deck" role="tab" data-deck="4">N4 <small id="c4"></small></button>
+  </nav>
+
+  <div class="panel-wrap" id="optPanelWrap">
+    <div>
+      <section class="panel" id="optPanel" aria-label="Options">
+        <div class="row"><span class="lab">Card order</span>
+          <div class="seg" data-key="order">
+            <button data-v="shuffle" aria-pressed="false">Shuffle</button>
+            <button data-v="seq" aria-pressed="false">In order</button>
+          </div>
+        </div>
+        <div class="row"><span class="lab">Cards to study</span>
+          <div class="seg" data-key="filter">
+            <button data-v="all" aria-pressed="false">All cards</button>
+            <button data-v="learning" aria-pressed="false">Still learning</button>
+          </div>
+        </div>
+        <div class="row"><span class="lab">Front of card</span>
+          <div class="seg" data-key="dir">
+            <button data-v="jp" aria-pressed="false">Japanese</button>
+            <button data-v="en" aria-pressed="false">English</button>
+          </div>
+        </div>
+        <div class="row"><span class="lab" id="lblEx">Show example sentences</span>
+          <button class="switch" role="switch" aria-labelledby="lblEx" data-key="ex" aria-checked="false"></button>
+        </div>
+        <div class="row"><span class="lab" id="lblKj">Show kanji on the answer</span>
+          <button class="switch" role="switch" aria-labelledby="lblKj" data-key="kanji" aria-checked="false"></button>
+        </div>
+        <div class="panel-actions">
+          <button class="small-btn" id="reshuffle">Reshuffle cards</button>
+          <button class="small-btn danger" id="reset">Reset progress</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="progress" aria-live="polite">
+    <div class="stats"><span id="posText"></span><span id="knownText"></span></div>
+    <div class="bar" role="progressbar" aria-label="Cards you know" aria-valuemin="0" aria-valuemax="100" id="barA11y"><i id="barFill"></i></div>
+  </div>
+
+  <section class="stage" id="stage">
+    <div class="card-wrap" id="cardWrap">
+      <div class="card" id="card" role="button" tabindex="0" aria-label="Flashcard. Press to flip.">
+        <div class="face front" id="front"></div>
+        <div class="face back" id="back"></div>
+      </div>
+    </div>
+    <div class="empty" id="empty" hidden>
+      <div class="big" aria-hidden="true">🎉</div>
+      <h2>You know every card here</h2>
+      <p>There is nothing left in this deck. Show all cards to keep reviewing.</p>
+      <button class="cta" id="showAll">Show all cards</button>
+    </div>
+  </section>
+
+  <div class="dock" id="dock">
+  <div class="controls" id="controls">
+    <button class="ghost" id="prev" aria-label="Previous card">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="pill warn" id="again">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+      Still learning
+    </button>
+    <button class="pill good" id="good">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+      I know it
+    </button>
+    <button class="ghost" id="next" aria-label="Next card">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+  <p class="kbd-hint" id="kbdHint"><span class="kbd-only">Space flips the card. Arrow keys move. Press 1 for still learning, 2 for I know it, S to hear it.</span><span class="touch-only">Tap the card to flip it. Swipe left or right to change cards.</span></p>
+  </div>
+</main>
+
+<main class="app" id="kapp" hidden inert>
+  <header>
+    <div class="brand">
+      <div class="logo jp" aria-hidden="true">字</div>
+      <div>
+        <div class="app-title jp">FlashNihongo</div>
+        <p class="sub">JLPT N5 and N4 kanji</p>
+      </div>
+    </div>
+    <div class="hbtns">
+      <button class="opt-btn" id="kMenuBtn" aria-label="Back to the mode menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>
+        <span>Menu</span>
+      </button>
+      <button class="opt-btn" id="kOptBtn" aria-label="Options" aria-expanded="false" aria-controls="kOptPanel">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>Options</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="decks" role="tablist" aria-label="Choose a kanji deck" id="kDecks">
+    <button class="deck" role="tab" data-deck="all">All <small id="kcAll"></small></button>
+    <button class="deck" role="tab" data-deck="5">N5 <small id="kc5"></small></button>
+    <button class="deck" role="tab" data-deck="4">N4 <small id="kc4"></small></button>
+  </nav>
+
+  <div class="panel-wrap" id="kOptPanelWrap">
+    <div>
+      <section class="panel" id="kOptPanel" aria-label="Kanji options">
+        <div class="row"><span class="lab">Card order</span>
+          <div class="seg" data-key="order">
+            <button data-v="shuffle" aria-pressed="false">Shuffle</button>
+            <button data-v="seq" aria-pressed="false">In order</button>
+          </div>
+        </div>
+        <div class="row"><span class="lab">Cards to study</span>
+          <div class="seg" data-key="filter">
+            <button data-v="all" aria-pressed="false">All cards</button>
+            <button data-v="learning" aria-pressed="false">Still learning</button>
+          </div>
+        </div>
+        <div class="row"><label class="lab" for="kLesson">Lesson</label>
+          <select class="sel" id="kLesson"></select>
+        </div>
+        <div class="row"><span class="lab">Front of card</span>
+          <div class="seg" data-key="dir">
+            <button data-v="jp" aria-pressed="false">Kanji</button>
+            <button data-v="en" aria-pressed="false">Meaning</button>
+          </div>
+        </div>
+        <div class="row"><span class="lab" id="kLblEx">Show example words</span>
+          <button class="switch" role="switch" aria-labelledby="kLblEx" data-key="ex" aria-checked="false"></button>
+        </div>
+        <div class="panel-actions">
+          <button class="small-btn" id="kReshuffle">Reshuffle cards</button>
+          <button class="small-btn danger" id="kReset">Reset progress</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="progress" aria-live="polite">
+    <div class="stats"><span id="kPosText"></span><span id="kKnownText"></span></div>
+    <div class="bar" role="progressbar" aria-label="Kanji you know" aria-valuemin="0" aria-valuemax="100" id="kBarA11y"><i id="kBarFill"></i></div>
+  </div>
+
+  <section class="stage" id="kStage">
+    <div class="card-wrap" id="kCardWrap">
+      <div class="card" id="kCard" role="button" tabindex="0" aria-label="Kanji flashcard. Press to flip.">
+        <div class="face front" id="kFront"></div>
+        <div class="face back" id="kBack"></div>
+      </div>
+    </div>
+    <div class="empty" id="kEmpty" hidden>
+      <div class="big" aria-hidden="true">🎉</div>
+      <h2>You know every kanji here</h2>
+      <p>There is nothing left in this deck. Show all cards to keep reviewing.</p>
+      <button class="cta" id="kShowAll">Show all cards</button>
+    </div>
+  </section>
+
+  <div class="dock" id="kDock">
+  <div class="controls">
+    <button class="ghost" id="kPrev" aria-label="Previous card">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="pill warn" id="kAgain">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+      Still learning
+    </button>
+    <button class="pill good" id="kGood">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+      I know it
+    </button>
+    <button class="ghost" id="kNext" aria-label="Next card">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+  <p class="kbd-hint"><span class="kbd-only">Space flips the card. Arrow keys move. Press 1 for still learning, 2 for I know it, S to hear a word.</span><span class="touch-only">Tap the card to flip it. Tap a word to hear it. Swipe left or right to change cards.</span></p>
+  </div>
+</main>
+
+<script src="js/vocab-data.js"></script>
+<script src="js/kanji-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
