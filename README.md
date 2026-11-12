@@ -4,7 +4,7 @@
 
 **JLPT N5 & N4 flashcards for vocabulary and kanji. Tap, flip, learn.**
 
-[![Open the app](https://img.shields.io/badge/▶_Open_the_app-4f46e5?style=for-the-badge)]([https://YOUR-USERNAME.github.io/YOUR-REPO/](https://aayushhh13.github.io/jlpt-FlashNihongo-Flashcards/))
+[![Open the app](https://img.shields.io/badge/▶_Open_the_app-4f46e5?style=for-the-badge)](https://aayushhh13.github.io/jlpt-FlashNihongo-Flashcards/)
 
 ![Vocab](https://img.shields.io/badge/Vocab-1%2C430_cards-4f46e5?style=flat-square)
 ![Kanji](https://img.shields.io/badge/Kanji-282_cards-c9474a?style=flat-square)
